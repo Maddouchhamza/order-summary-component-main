@@ -4,19 +4,22 @@ body{
     background-image: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     font-family: "Red Hat Display";
+    display: flex;
+    justify-content: center;
+    height: 100vh; 
+    /* VH: VIEW PORT HEIGHT */
+    align-items: center;
 }
 
 section{
     background-color: white;
-    margin: auto;
-    margin-top: 3%;
-    width: 450px;
-    height: 680px;
+    width: 320px;
+    height: 550px;
     border-radius: 20px;    
 }    
 
 section>img{
-    width: 450px;
+    width: 320px;
     border-radius: 20px 20px 0px 0px;    
 
 }
@@ -24,21 +27,22 @@ section>img{
 .title{
     display: flex;
     justify-content: center;
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 22px;
     color: hsl(223, 47%, 23%);
 }
 
 .description{
-    padding-top: 1.5rem ;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem ;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    padding-bottom: 1.4rem;
     text-align: center;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 14px;
     color: hsl(224, 23%, 55%);
+    line-height: 23px;
 }
 
 .card{
@@ -46,10 +50,10 @@ section>img{
     justify-content: space-around;
     align-items: center;
     background-color: hsl(225, 40%, 98%);
-    margin-left: 3rem;
-    margin-right: 3rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-radius: 15px;
 }
 .prop{
@@ -57,7 +61,7 @@ section>img{
     align-items: center;
 }
 .prop>img{
-    padding-right: 15px;
+    padding-right: 14px;
 }
 .article{
 }
@@ -65,36 +69,51 @@ section>img{
     font-weight: 900;
     color: hsl(223, 47%, 23%);
     margin-bottom: 5px;
+    font-size: 14px;
+
 }
 .price{
     color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    font-weight: 500;
 }
 .change{
     color: hsl(245, 75%, 52%);
-    font-weight: 600;
+    font-weight: 900;
     text-decoration: underline;
+    font-size: 14px;
 }
-
+.change:hover{
+    color: hsl(244, 55%, 66%);
+    text-decoration: none;
+}
 .payement{
     display: flex;
     justify-content: center;
     background-color: hsl(245, 75%, 52%);
     color: white;
+    font-size: 15px;
     font-weight: 600;
-    margin-top: 2rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
     border-radius: 10px;
-    box-shadow: 0px 10px 25px 0px hsl(245, 43%, 76%);
-    ;
+    box-shadow: 0px 10px 30px 3px hsl(248, 19%, 84%);
+    
 }
-
+.payement:hover{
+    background-color: hsl(244, 55%, 66%);
+}
 .cancel{
     display: flex;
     justify-content: center;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     color: hsl(224, 23%, 55%);
-    font-weight: 600;
+    font-weight: 900;
+    font-size: 14px;
+}
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
 }
